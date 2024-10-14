@@ -26,13 +26,26 @@
    ===============================
 */
 
-nav.bottom {
+body{
+   outline: red dashed 2px;
+}
+
+
+
+nav#bottom {
    display: -webkit-flex;
    display: flex;
-
+   outline: green dashed 2px;
    -webkit-box-flex: nowrap;
    flex-wrap: nowrap;
-   justify-items: baseline;
+   justify-content: baseline;
+}
+
+ul {
+   display:-webkit-flex;
+   display:flex;
+   
+   max-width: 150px;
 }
 
 
@@ -40,12 +53,25 @@ nav.bottom {
 	Mobile Styles up to 480 pixels
    ===============================
 */
-	
-
+	@media only screen and (max-width: 480px) {
+   body {
+      color: rgb(211, 211, 211);
+      background-color: rgb(51, 51, 51);
+   }
+   aside , article + img , #spotlight {
+   display: none;
+   }
+   ul > nav#top {
+      flex-flow: row wrap;
+      flex: 1 1 130px;
+      -webkit-flex-flow: row wrap;
+      -webkit-box-flex:1 1 130px;
+      font-size: 2.2em;
+   }
+}
 
 
 /* ============================================
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
-
