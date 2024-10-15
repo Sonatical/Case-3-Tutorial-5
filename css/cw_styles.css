@@ -26,19 +26,15 @@
    ===============================
 */
 
-body{
-   outline: red dashed 2px;
-}
-
-
 
 nav#bottom {
    display: -webkit-flex;
    display: flex;
-   outline: green dashed 2px;
    -webkit-box-flex: nowrap;
    flex-wrap: nowrap;
-   justify-content: baseline;
+   justify-content: space-around;
+   flex-direction:column;
+   
 }
 
 nav#bottom ul {
@@ -71,7 +67,7 @@ nav#bottom ul {
    }
    nav#top ul li {
     display: flex;
-    flex-basis: 1 1 130px;
+    flex: 1 1 130px;
     font-size: 2.2em;
     background-repeat: no-repeat;
     background-size: contain;
@@ -101,8 +97,20 @@ nav#bottom ul {
    
    }
 
-   
-   
+   p#links{
+      display: flex;
+      flex-flow: nowrap;
+      justify-content: space-around;
+   } 
+
+   p#links a {
+      color:white;
+      background-color: rgb(220, 27, 27);
+      border-radius: 20px;
+      padding:10px;
+      /* text-underline-offset: 100000px; /* The underline is gone, don't question it*/
+      text-decoration: none;
+   }
 }
 
 
@@ -110,3 +118,13 @@ nav#bottom ul {
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
+ @media only screen and (min-width: 481px) {
+   body {
+      display: flex;
+      display: -webkit-flex;
+
+      flex: nowrap;
+      -webkit-flex: nowrap;
+   }
+
+ }
