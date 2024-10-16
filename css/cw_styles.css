@@ -34,8 +34,6 @@ nav#bottom {
    flex-flow: row nowrap;
    -webkit-justify-content: center;
    justify-content: center;
-   
-   
 }
 
 nav#bottom ul {
@@ -52,15 +50,18 @@ nav#bottom ul {
       color: rgb(211, 211, 211);
       background-color: rgb(51, 51, 51);
    }
+
    aside, article img, section#spotlight {
    display: none;
    }
+
    nav#top ul {
       display: flex;
       display: -webkit-flex;
       flex-flow: row wrap;
       -webkit-flex-flow: row wrap;
    }
+
    nav#top ul li {
    -webkit-flex:1 1 130px;
     flex: 1 1 130px;
@@ -71,20 +72,25 @@ nav#bottom ul {
       background: url(../imgs/cw_image01.png) center / contain no-repeat;
    
    }
+
    nav#top ul li:nth-of-type(2) {
       background: url(../imgs/cw_image02.png) center / contain no-repeat;
    }
+
    nav#top ul li:nth-of-type(3) {
       background: url(../imgs/cw_image03.png) center / contain no-repeat;
    
    }
+
    nav#top ul li:nth-of-type(4) {
       background: url(../imgs/cw_image04.png) center / contain no-repeat;
    }
+
    nav#top ul li:nth-of-type(5) {
       background: url(../imgs/cw_image05.png) center / contain no-repeat;
    
    }
+
    nav#top ul li:nth-of-type(6) {
       background: url(../imgs/cw_image06.png) center / contain no-repeat;
    
@@ -121,10 +127,11 @@ nav#bottom ul {
       -webkit-flex-flow: row wrap;
    }
 
-article {
+   article {
    -webkit-flex: 2 1 400px;
    flex: 2 1 400px;
-}
+   }
+
    aside {
       -webkit-flex:1 2 200px;
       flex: 1 2 200px;
