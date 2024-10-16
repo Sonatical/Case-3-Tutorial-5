@@ -127,4 +127,30 @@ nav#bottom ul {
       -webkit-flex: nowrap;
    }
 
+   article {
+      flex: 2 1 400px
+   }
+
+   aside {
+      flex: 1 2 200px
+   }
+
+   nav#top ul {
+      display: flex;
+      display:-webkit-flex;
+
+      flex:nowrap;
+      -webkit-box-flex: nowrap;
+
+      height: 50px;
+      justify-content:center;
+      flex-shrink: 1 1 80px;
+
+      background-color: rgb(51, 51, 51);
+   }
+
+   p#links {
+      display:none;
+   }
+
  }
